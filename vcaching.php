@@ -193,7 +193,7 @@ class VCaching {
         foreach ($varnishIp as $key => $ip) {
             $this->ipsToHosts[] = array(
                 'ip' => $ip,
-                'host' => $this->dynamicHost ? $_SERVER['HTTP_HOST'] : $varnishHost[$key],
+                'host' => $this->dynamicHost ? ($_SERVER['HTTP_HOST'] ?? '') : $varnishHost[$key],
                 'statsJson' => isset($statsJsons[$key]) ? $statsJsons[$key] : null
             );
         }
