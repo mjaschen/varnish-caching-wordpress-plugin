@@ -8,5 +8,8 @@
             "name": "Razvan Stanga",
             "email": "varnish-caching@razvi.ro"
         }
-    ]
+    ],
+    "require": {
+        "php": "^8.0"
+    }
 }
